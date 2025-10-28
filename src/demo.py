@@ -3,10 +3,10 @@
 # ECSA Refactored - Demo Script
 # ===========================================
 """
-Demonstração completa da nova arquitetura Component.
-Mostra como usar todos os recursos implementados:
+Complete demonstration of the new Component architecture.
+Shows how to use all implemented features:
 - Lifecycle hooks
-- Configurações Pydantic
+- Pydantic configurations
 - Error handling
 - Inter-component communication
 - AsyncComponent API
@@ -20,11 +20,11 @@ import os
 import sys
 from pathlib import Path
 
-# Adiciona diretório raiz ao path
+# Add root directory to path
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
-from main import Agent, BaseEvent, ErrorEvent  # Import também os tipos base
+from main import Agent, BaseEvent, ErrorEvent  # Import base types as well
 from Events import InputEvent, GetContextRequest, StoreMessageRequest
 from Components import (
     LLMComponent, LLMConfig,
@@ -41,11 +41,11 @@ from Components import (
     create_teacher_config,
 )
 
-# Import ComponentTestHarness diretamente do main
+# Import ComponentTestHarness directly from main
 from main import ComponentTestHarness
 from EventBus import EventBus
 
-# Desabilita logging do LLMFactory para demo mais limpa
+# Disable LLMFactory logging for cleaner demo output
 import logging
 logging.basicConfig(level=logging.WARNING)
 
@@ -54,10 +54,10 @@ logging.basicConfig(level=logging.WARNING)
 
 async def demo_basic_agent():
     """
-    Demo 1: Agent básico funcional
+    Demo 1: Basic Functional Agent
     """
     print("\n" + "="*60)
-    print("🚀 DEMO 1: Agent Básico Funcional")
+    print("🚀 DEMO 1: Basic Functional Agent")
     print("="*60)
 
     # Cria agent
