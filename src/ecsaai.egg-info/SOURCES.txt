@@ -1,7 +1,10 @@
 LICENSE
 pyproject.toml
 readme.md
+src/ecsaai/Events.py
 src/ecsaai/__init__.py
+src/ecsaai/libs.py
+src/ecsaai/main.py
 src/ecsaai.egg-info/PKG-INFO
 src/ecsaai.egg-info/SOURCES.txt
 src/ecsaai.egg-info/dependency_links.txt

@@ -20,11 +20,18 @@ from .main import (
 )
 
 # Events
-from .Events import *
+try:
+    from .Events import *
+except ImportError:
+    pass
 
 # Components
 try:
-    from .Components import *
+    from .Components import (
+        LLMComponent, LLMConfig,
+        ContextComponent, ContextConfig,
+        OutputComponent, OutputConfig
+    )
 except ImportError:
     pass
 
