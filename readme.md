@@ -729,10 +729,6 @@ Don't use ECSAI for:
 - ❌ Prototyping basic flows (use LangGraph)
 - ❌ Non-technical team (use Langflow)
 
----
-
-## 📚 Documentation
-
 ## 📚 Documentation
 
 - **[Philosophy & Architecture](docs/philosophy.md)** - Why ECS for AI agents
